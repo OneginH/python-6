@@ -1,0 +1,40 @@
+1)
+def nested_sum(t):
+ s=0
+ for i in range(3):
+  s+=sum(t[i])
+ return s
+t=[[0 for n in range (3)] for nn in range (3)]
+for i in range(3):
+ t[i] = [int(e1) for e1 in input().split()]
+s = nested_sum(t)
+print(s)
+2)
+def cumsum(t):
+ s = []
+ summ = 0
+ for i in range (len(t)):
+   summ += t[i]
+   s.append(summ)
+ return (s)
+a = [5,10,15]
+print(cumsum(a))
+3)
+L = input()
+def middle(L):
+    return L[(len(L)-1)//2]
+print (middle(L))
+4)
+def chop(t):
+    t[1:-1]
+t = [1, 2, 3, 4, 5]
+print(chop(t))
+5)
+l = [1, 2, 3, 4, 5]
+x = [54, 2, 3, 4, 5]
+def Is_sorted(t):
+    return t == sorted(t)
+print(Is_sorted(l))
+6)
+def is_anagram(w1, w2):
+    return sorted(w1) == sorted(w2)
